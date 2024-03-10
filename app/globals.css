@@ -105,3 +105,13 @@ a {
     color-scheme: dark;
   }
 }
+
+.zoom-link {
+  transition: transform 0.2s ease-in-out;
+}
+
+.zoom-link:hover,
+.zoom-link:active {
+  transform: scale(1.6);
+}
+
