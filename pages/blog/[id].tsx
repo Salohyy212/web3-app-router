@@ -10,8 +10,6 @@ import blogLists from '../../utils/blogLists';
 const BlogPage: React.FC = () => {
   const router = useRouter();
   const { id } = router.query;
-
-  // Générer un lien vers la page d'image du blog
   const imagePageLink = `/blog/${id}/image`;
 
   return (
