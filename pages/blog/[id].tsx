@@ -1,4 +1,3 @@
-// pages/blog/[id].tsx
 import React from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
@@ -18,7 +17,6 @@ const BlogPage: React.FC = () => {
       <Sidebar showSidebar={true} blogLists={blogLists} />
       <div style={{ textAlign: 'center', marginTop: '15%', flex: 1 }}>
         <h1>Blog {id}</h1>
-        <p>Contenu du Blog {id}</p>
         <p>
           <Link href={imagePageLink} style={{ color: '#000000', textDecoration: 'none' }}>
             Image du Blog {id}

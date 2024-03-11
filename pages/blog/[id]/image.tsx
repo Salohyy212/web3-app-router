@@ -1,4 +1,3 @@
-// pages/blog/[id]/image.tsx
 import React from 'react';
 import { useRouter } from 'next/router';
 import Header from '../../../components/Header';
@@ -9,8 +8,6 @@ import blogLists from '@/utils/blogLists';
 const BlogImagePage: React.FC = () => {
   const router = useRouter();
   const { id } = router.query;
-
-
   const randomImageURL = `https://picsum.photos/400/300?random=${id}`;
 
   return (
